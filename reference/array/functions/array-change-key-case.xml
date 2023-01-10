@@ -50,9 +50,32 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   Returns an array with its keys lower or uppercased, or &null; if
-   <parameter>array</parameter> is not an array.
+   Returns an array with its keys lower or uppercased.
   </para>
+ </refsect1>
+
+ <refsect1 role="changelog">
+  &reftitle.changelog;
+  <informaltable>
+   <tgroup cols="2">
+    <thead>
+     <row>
+      <entry>&Version;</entry>
+      <entry>&Description;</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>8.0.0</entry>
+      <entry>
+       Since <parameter>array</parameter> type is <literal>array</literal>,
+       return value is always of type <literal>array</literal>;
+       previously, an argument type was not specified, and the function returned &null;.
+      </entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </informaltable>
  </refsect1>
 
  <refsect1 role="examples">
